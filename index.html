@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-link">
+            <a href="" class="link">JE</a>
+        </nav>
+    </header>
+    <main class="contenedor-encriptador">
+        <section class="contenedor-encriptador-insertar">
+            <div class="encriptar">
+                <textarea id="entradaTexto" class="encriptador-txtArea" name="textarea" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="encriptador-botones">
+                    <button onclick="encriptar()" id="btn-encriptar" class="boton-encriptar"><img class="btn-imagen" src="./assets/bloqueado.png" alt="logo encriptar">Encriptar</button>
+                    <button onclick="desencriptar()" id="btn-desencriptar" class="boton-desencriptar"> <img class="btn-imagen" src="./assets/desbloqueado.png" alt="logo desencriptar"> Desencriptar</button>
+                </div>
+            </div>
+        </section>
+        <div id="resultadoEncriptador" class="contenedor-encriptador-resultado">
+            <div class="resultado-imagen">
+                <img class="encriptador-imagen" src="./assets/Muñeco.png" alt="imagen sin datos">
+            </div>
+            <div class="resultado-texto">
+                <h2 class="txt-desencriptador">Ningun mensaje fue encontrado</h2>
+                <h4 class="txt-desencriptador">Ingrese un texto para encriptar o desencriptar</h4>
+               
+            </div>
+                 
+        </div>
+    </main>
+    <footer class="footer">
+        <p class="pie-class">Desarrollado por  <strong class="autor"> Jesus-E</strong> </p>
+    </footer>
+    <script src="./js/app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</body>
+</html>
