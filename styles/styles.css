@@ -16,6 +16,7 @@
     --btn-copiar: #6BCB77;
     --color-autor1: #1679AB;
     --color-autor2: #5DEBD7;
+    --color-fondo-encriptar: #0079FF;
 }
 
 *{
@@ -122,12 +123,20 @@ body{
     font-family: var(--fuente-principal);
     color: var(--color-texto-body-2);
     font-weight: bold;
-    background-color: #0079FF;
+    background-color: var(--color-fondo-encriptar);
     border-radius: 15px;
     background: linear-gradient(var(--btn-desencriptar), var(--btn-encriptar)) padding-box,
     linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF) border-box;
     border: 1.5px solid transparent;
 }
+
+.boton-encriptar:hover {
+        background-color:var(--color-fondo-encriptar); 
+        background: linear-gradient(var(--btn-encriptar),var(--btn-desencriptar)) padding-box,
+                    linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF) border-box; 
+        transform: scale(1.05); 
+        color: white; 
+    }
 
 .boton-desencriptar{
     display: flex;
@@ -145,6 +154,14 @@ body{
     background: linear-gradient(var(--btn-desencriptar1), var(--btn-desencriptar)) padding-box,
     linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF) border-box;
 border: 1.5px solid transparent;
+}
+
+.boton-desencriptar:hover {
+    background-color:var(--btn-desencriptar); 
+    background: linear-gradient(var(--btn-desencriptar),var(--btn-desencriptar1)) padding-box,
+                linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF) border-box; 
+    transform: scale(1.05); 
+    color: white;
 }
 
 .btn-imagen{
@@ -253,6 +270,14 @@ border: 1.5px solid transparent;
 border: 2px solid transparent;
 }
 
+.btnResult:hover {
+    background-color:var(--btn-desencriptar); 
+    background: linear-gradient(var(--btn-encriptar),var(--btn-copiar)) padding-box,
+                linear-gradient(45deg, #FF6B6B, #FFD93D, #6BCB77, #4D96FF) border-box; 
+    transform: scale(1.05); 
+    color: white; 
+}
+
 .footer{
     display: flex;
     justify-content: space-between;
@@ -291,6 +316,4 @@ border: 2px solid transparent;
     .encriptador-botones{
         flex-direction: column;
     }
-    
-   
 }
