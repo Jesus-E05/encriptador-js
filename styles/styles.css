@@ -100,7 +100,21 @@ body{
 }
 
 .encriptador-txtArea::placeholder{
+    color: var(--color-texto-body-2);    
+}
+
+.txt-aviso{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 100%;
     color: var(--color-texto-body-2);
+    gap: 1%;
+    font-size: 1rem;
+}
+
+.img-aviso{
+    width: 3%;
 }
 
 .encriptador-botones{
